@@ -1,0 +1,120 @@
+body{
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#logo{
+    width: 100px;
+    height: 50px;
+    margin-left: 50px;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    margin-right: 70px;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover{
+    color: #0065FC;
+    border-top: #0065FC solid 3px;
+    padding-top: 34px;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        width: 100%;
+    }
+    #searchbutton2{
+        display: none;   
+    }
+}
+@media screen and (max-width: 768px) {
+    header{
+        display: block;
+        text-align: center;
+    }
+    nav ul{
+        padding: 15px 0 15px 0 ;
+    }
+    nav ul li{
+        width: 100%;
+        margin: auto;
+        border-bottom: #F2F2F2 solid 5px;
+        padding-bottom: 15px;
+    }
+    nav ul li a:hover { 
+        border-top: hidden;
+    }
+    #navhebergement:hover{
+        border-bottom: #0065FC solid 5px;
+        padding-bottom: 15px;
+    }
+    #navactivite:hover{
+        border-bottom: #0065FC solid 5px;
+        padding-bottom: 15px;
+    }
+    #searchbutton1{
+        display: none;
+    }
+    
+}
+main{
+    margin-left: 30px;
+}
+h1{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+h2{
+    font-size: 13px;
+    margin-top: 5px;
+}
+#loc{
+    line-height: 40px;
+}
+span{
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+#recherche{
+    margin-top: 20px;
+    display: flex;
+    width: 370px;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    height: 40px;    
+}
+#searchbar{
+    height: 40px;
+    width: 230px;
+    border: #F2F2F2 solid 1px;
+    border-left: hidden;
+    border-right: hidden;
+}
+#searchbar::placeholder{
+    color: black;
+    font-weight: bold;
+}
+#searchbutton{
+    width: 140px;
+    background-color:#0065FC ;
+    border-radius: 0 10px 10px 0;
+    color: white;
+    padding: 0;
+}
