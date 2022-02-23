@@ -32,12 +32,52 @@ nav ul li a:hover{
     border-top: #0065FC solid 3px;
     padding-top: 34px;
 }
+@media screen and (min-width: 992px){
+    body{
+        width: 100%;
+    }
+    main{
+        margin-left: 30px;
+    }    
+    #recherche{
+        width: 370px;
+    }
+    #loupe{
+        display: none;
+    }
+    #searchtext{
+        font-size: 15px;
+    }
+    #searchbutton{
+        width: 140px;
+        background-color:#0065FC ;
+        border-radius: 0 10px 10px 0;
+        color: white;
+        padding: 0;
+    }
+}
 @media screen and (min-width: 768px) and (max-width: 992px) {
     body{
         width: 100%;
     }
-    #searchbutton2{
-        display: none;   
+    main{
+        margin-left: 30px;
+    }   
+    #recherche{
+        width: 370px;
+    }
+    #loupe{
+        display: none;
+    }
+    #searchtext{
+        font-size: 15px;
+    }
+    #searchbutton{
+        width: 140px;
+        background-color:#0065FC ;
+        border-radius: 0 10px 10px 0;
+        color: white;
+        padding: 0;
     }
 }
 @media screen and (max-width: 768px) {
@@ -57,21 +97,39 @@ nav ul li a:hover{
     nav ul li a:hover { 
         border-top: hidden;
     }
-    #navhebergement:hover{
+    #navhebergement:hover, #navactivite:hover{
         border-bottom: #0065FC solid 5px;
         padding-bottom: 15px;
     }
-    #navactivite:hover{
-        border-bottom: #0065FC solid 5px;
-        padding-bottom: 15px;
+    main{
+        margin: 0;
     }
-    #searchbutton1{
+    h1, h2{
+        margin-left: 10px;
+    }
+    #recherche{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        height: 50px;
+        width: 280px;
+        justify-content: space-between;
+    }
+    #searchtext{
         display: none;
     }
-    
-}
-main{
-    margin-left: 30px;
+    #searchbutton{
+        width: 50px;
+        border-radius: 10px;
+        line-height: 50px;
+    }
+    #loupe{
+        font-size: 20px;
+        text-align: center;
+        padding: 0;
+    }
+
 }
 h1{
     font-size: 20px;
@@ -84,7 +142,7 @@ h2{
     margin-top: 5px;
 }
 #loc{
-    line-height: 40px;
+    line-height: 50px;
 }
 span{
     font-size: 20px;
@@ -95,13 +153,12 @@ span{
 #recherche{
     margin-top: 20px;
     display: flex;
-    width: 370px;
     border-radius: 10px;
     background-color: #F2F2F2;
-    height: 40px;    
+    height: 50px;    
 }
 #searchbar{
-    height: 40px;
+    height: 50px;
     width: 230px;
     border: #F2F2F2 solid 1px;
     border-left: hidden;
@@ -112,9 +169,33 @@ span{
     font-weight: bold;
 }
 #searchbutton{
-    width: 140px;
     background-color:#0065FC ;
-    border-radius: 0 10px 10px 0;
     color: white;
     padding: 0;
+}
+#filter{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 30px;
+    font-weight: bold;
+}
+.containfilter{
+    margin-left: 30px;
+    border: solid #F2F2F2 3px;
+    border-radius: 50px;
+    height: 40px;
+    border-left: hidden;
+}
+#logoeco, #logofam, #logorom, #logoani{
+    line-height: 40px;
+    border-radius: 40px;
+    background-color: #DEEBFF;
+    height: 40px;
+    width: 40px;
+    color:#0065FC ;
+}
+.logotxt{
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }

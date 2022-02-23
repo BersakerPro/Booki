@@ -26,9 +26,18 @@
                 <div id=recherche>
                    <div id=loc><span class="fas fa-map-marker-alt fax2"></span></div>
                    <input id=searchbar type="search" placeholder="  Marseille, France" name="destination" />
-                   <input id=searchbutton1 style="border: hidden;" type="button" value="Rechercher" /> 
-                   <input id=searchbutton2 style="border: hidden;" type="button" value="<i class="fas fa-search"></i>" />   
+                   <button id=searchbutton type="submit" style="border: hidden;" value="Rechercher">
+                     <span id=searchtext>Rechercher</span>
+                     <span id=loupe class="fas fa-search"></span>
+                   </button> 
                 </div>   
+            </div>
+            <div id=filter>
+                <p>Filtres</p>
+                <div class=containfilter><span id=logoeco class="fas fa-money-bill-wave"></span><span class=logotxt>Économique</span></div>
+                <div class=containfilter><span id=logofam class="fas fa-child"></span><span class=logotxt>Familial</span></div>
+                <div class=containfilter><span id=logorom class="fas fa-heart"></span><span class=logotxt>Romantique</span></div>
+                <div class=containfilter><span id=logoani class="fas fa-dog"></span><span class=logotxt>Animaux autorisés</span></div>
             </div>
         </main>
     </body>
