@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
-        <html lang="fr">
         <title>Booki</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,41 +10,39 @@
     </head>
     <body>
         <header class="flexbetween">
-           <img src="css/images/logo/Booki.png" alt="logo de booki">
+           <img class="height50" src="css/images/logo/Booki.png" alt="logo de booki">
            <nav>
-               <ul>
-                   <li class="liennav"><a class="textcolorblack" href="#">Hébergements</a></li>
-                   <li class="liennav"><a class="textcolorblack" href="#">Activités</a></li>
+               <ul class="flex">
+                   <li class="liennav"><a class="textcolorblack textdeco" href="#">Hébergements</a></li>
+                   <li class="liennav"><a class="textcolorblack textdeco" href="#">Activités</a></li>
                </ul>
            </nav>
         </header>
         <main class="marginleft">
             <form>
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <h1 class="bold">Trouvez votre hébergement pour des vacances de rêve</h1>
                 <h2>En plein centre ville ou en pleine nature</h2>
-                <div class="recherche backcolorgrey">
+                <div class="recherche height50 backcolorgrey">
                    <div id=loc><span class="fas fa-map-marker-alt fax2 centerelement textcolorblack"></span></div>
-                   <input class="searchbar textcolorblack" type="search" placeholder="  Marseille, France" name="destination" />
-                   <button class="searchbutton backcolorblue textcolorwhite" type="submit" style="border: hidden;" value="Rechercher">
-                     <span class="centerelement" id=searchtext>Rechercher</span>
-                     <span id=loupe class="fas fa-search"></span>
+                   <input class="searchbar height50 textcolorblack bold" type="search" placeholder="  Marseille, France" name="destination" />
+                   <button class="searchbutton backcolorblue textcolorwhite padding0" type="submit" style="border: hidden;" value="Rechercher">
+                     <span class="searchtext centerelement textsize15 padding0">Rechercher</span>
+                     <span id=loupe class="fas fa-search padding0 centerelement"></span>
                    </button> 
                 </div>   
             </form>
-            <div id=filter>
+            <div class="filter bold">
                 <p>Filtres</p>
-                <div class=containfilter>
-                    <i class="fas fa-money-bill-wave backcolorgrey centerelement textcolorblue"></i><span class=logotxt>Économique</span>
-                    <i class="fas fa-child backcolorgrey centerelement textcolorblue"></i><span class=logotxt>Familial</span>
-                    <i class="fas fa-heart backcolorgrey centerelement textcolorblue"></i><span class=logotxt>Romantique</span>
-                    <i class="fas fa-dog backcolorgrey centerelement textcolorblue"></i><span class=logotxt>Animaux autorisés</span>
-                </div>
+                <div class=containfilter><i class="fas fa-money-bill-wave backcolorbluelight centerelement textcolorblue"></i><span class="logotxt textsize15">Économique</span></div>
+                <div class=containfilter><i class="fas fa-child backcolorbluelight centerelement textcolorblue"></i><span class="logotxt textsize15">Familial</span></div>
+                <div class=containfilter><i class="fas fa-heart backcolorbluelight centerelement textcolorblue"></i><span class="logotxt textsize15">Romantique</span></div>
+                <div class=containfilter><i class="fas fa-dog backcolorbluelight centerelement textcolorblue"></i><span class="logotxt textsize15">Animaux autorisés</span></div>
             </div>
-            <div id=info>
-                <span id=logoinfo class="fas fa-info"></span><div id=infotxt>Plus de 500 logements sont disponibles dans cette ville</div>
+            <div class=info>
+                <span class="fas fa-info logoinfo centerelement textcolorblue"></span><div class=infotxt>Plus de 500 logements sont disponibles dans cette ville</div>
             </div>
             <div class=card>
-                <img src="css/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                <img src="css/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">
             </div>
         </main>
     </body>

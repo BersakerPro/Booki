@@ -18,6 +18,9 @@ body{
 .backcolorgrey{
     background-color: #F2F2F2;
 }
+.backcolorbluelight{
+    background-color: #DEEBFF;
+}
 .textcolorblack{
     color: black;
 }
@@ -27,8 +30,23 @@ body{
 .textcolorblue{
     color: #0065FC;
 }
+.textdeco{
+    text-decoration: none;
+}
+.textsize15{
+    font-size: 15px;
+}
+.bold{
+    font-weight: bold;
+}
+.height50{
+    height: 50px;
+}
 .marginleft{
     margin-left: 30px;
+}
+.padding0{
+    padding: 0;
 }
 .centerelement{
     vertical-align: middle;
@@ -37,7 +55,6 @@ body{
 /*Header*/
 img{
     width: 100px;
-    height: 50px;
     margin-left: 50px;
 }
 nav ul{
@@ -47,34 +64,121 @@ nav ul li{
     margin-right: 70px;
     list-style: none;
 }
-nav ul li a{
-    text-decoration: none;
-}
 nav ul li a:hover{
     color: #0065FC;
     border-top: #0065FC solid 3px;
     padding-top: 34px;
 }
+/*Contenu*/
+
+h1{
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+h2{
+    font-size: 13px;
+    margin-top: 5px;
+}
+/*Barre de recherche*/
+#loc{
+    line-height: 50px;
+}
+span{
+    font-size: 20px;
+    width: 50px;
+}
+.recherche{
+    margin-top: 20px;
+    display: flex;
+    border-radius: 10px;
+}
+.searchbar{
+    width: 230px;
+    border: #F2F2F2 solid 1px;
+    border-left: hidden;
+    border-right: hidden;
+}
+/*Filtres*/
+.filter{
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    line-height: 40px
+}
+.filter p{
+    margin: 0;
+}
+.containfilter{
+    margin-left: 25px;
+}
+.containfilter i{
+    line-height: 40px;
+    border-radius: 40px;
+    height: 40px;
+    width: 40px;
+}
+.logotxt{
+    padding-left: 30px;
+    padding-right: 9px;
+    padding-top: 9px;
+    padding-bottom: 11px;
+    border: solid #F2F2F2 2px;
+    border-radius: 0 50px 50px 0;
+    border-left: #DEEBFF;
+    overflow: hidden;
+    margin-left: -17px;
+}
+.info{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 10px;
+}
+.logoinfo{
+    font-size: 13px;
+    border: solid 2px #F2F2F2;
+    border-radius: 50px;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+}
+.infotxt{
+    padding-left: 8px;
+    padding-top: 2px;
+    font-size: 13px;
+}
+.card{
+    width: 200px;
+    height: 150px;
+    border: solid;
+    border-radius: 20px;
+}
+.card img{
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+}
 @media screen and (min-width: 768px){
- 
-   
+    .recherche{
+        width: 370px; 
+    }
     #loupe{
         display: none;
-    }
-    #searchtext{
-        font-size: 15px;
     }
     .searchbutton{
         width: 140px;
         border-radius: 0 10px 10px 0;
-        color: white;
-        padding: 0;
     }
 }
 @media screen and (max-width: 768px) {
     header{
-        display: block;
         text-align: center;
+        flex-direction: column;
+    }
+    header img{
+        margin-left: auto;
+        margin-right: auto;
     }
     nav ul{
         padding: 15px 0 15px 0 ;
@@ -102,12 +206,10 @@ nav ul li a:hover{
         display: block;
         margin-left: auto;
         margin-right: auto;
-        position: relative;
-        height: 50px;
-        width: 280px;
-        justify-content: space-between;
+        position: relative;   
+        width: 280px; 
     }
-    #searchtext{
+    .searchtext{
         display: none;
     }
     .searchbutton{
@@ -117,111 +219,14 @@ nav ul li a:hover{
     }
     #loupe{
         font-size: 20px;
-        text-align: center;
-        padding: 0;
     }
-    #filter{
-        justify-content: center;
+    .filter{
+        justify-content: flex-start;
         margin-left: 5px;
     }
+    .containfilter{
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
 
-}
-h1{
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 40px;
-    margin-bottom: 0;
-}
-h2{
-    font-size: 13px;
-    margin-top: 5px;
-}
-#loc{
-    line-height: 50px;
-}
-span{
-    font-size: 20px;
-    width: 50px;
-}
-.recherche{
-    margin-top: 20px;
-    display: flex;
-    border-radius: 10px;
-    height: 50px;
-    width: 370px;    
-}
-.searchbar{
-    height: 50px;
-    width: 230px;
-    border: #F2F2F2 solid 1px;
-    border-left: hidden;
-    border-right: hidden;
-}
-.searchbar::placeholder{
-    font-weight: bold;
-}
-.searchbutton{
-    padding: 0;
-}
-#filter{
-    display: flex;
-    margin-top: 30px;
-    font-weight: bold;
-    flex-wrap: wrap;
-}
-#filter p{
-    margin-top: 13px;
-}
-.containfilter{
-    margin-left: 25px;
-    margin-top: 5px;
-}
-.containfilter i{
-    line-height: 40px;
-    border-radius: 40px;
-    height: 40px;
-    width: 40px;
-}
-.logotxt{
-    font-size: 15px;
-    padding-left: 30px;
-    padding-right: 15px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    border: solid #F2F2F2 2px;
-    border-radius: 0 50px 50px 0;
-    border-left: hidden;
-    overflow: hidden;
-    margin-left: -15px;
-}
-#info{
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: nowrap;
-    font-size: 10px;
-}
-#logoinfo{
-    font-size: 12px;
-    border: solid 2px #F2F2F2;
-    border-radius: 50px;
-    width: 15px;
-    height: 15px;
-    color: #0065FC;
-    line-height: 15px;
-}
-#infotxt{
-    padding-left: 8px;
-    padding-top: 2px;
-    font-size: 13px;
-}
-.card{
-    width: 200px;
-    height: 150px;
-    border: solid;
-    border-radius: 20px;
-}
-.card img{
-    width: 200px;
-    height: 100px;
-    object-fit: cover;
 }
