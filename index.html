@@ -10,34 +10,36 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     </head>
     <body>
-        <header>
-           <img id="logo" src="css/images/logo/Booki.png" alt="logo de booki">
+        <header class="flexbetween">
+           <img src="css/images/logo/Booki.png" alt="logo de booki">
            <nav>
                <ul>
-                   <li id=navhebergement><a href="#">Hébergementsss</a></li>
-                   <li id=navactivite><a href="#">Activités</a></li>
+                   <li class="liennav"><a class="textcolorblack" href="#">Hébergements</a></li>
+                   <li class="liennav"><a class="textcolorblack" href="#">Activités</a></li>
                </ul>
            </nav>
         </header>
-        <main>
-            <div id=formulaire>
+        <main class="marginleft">
+            <form>
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <h2>En plein centre ville ou en pleine nature</h2>
-                <div id=recherche>
-                   <div id=loc><span class="fas fa-map-marker-alt fax2"></span></div>
-                   <input id=searchbar type="search" placeholder="  Marseille, France" name="destination" />
-                   <button id=searchbutton type="submit" style="border: hidden;" value="Rechercher">
-                     <span id=searchtext>Rechercher</span>
+                <div class="recherche backcolorgrey">
+                   <div id=loc><span class="fas fa-map-marker-alt fax2 centerelement textcolorblack"></span></div>
+                   <input class="searchbar textcolorblack" type="search" placeholder="  Marseille, France" name="destination" />
+                   <button class="searchbutton backcolorblue textcolorwhite" type="submit" style="border: hidden;" value="Rechercher">
+                     <span class="centerelement" id=searchtext>Rechercher</span>
                      <span id=loupe class="fas fa-search"></span>
                    </button> 
                 </div>   
-            </div>
+            </form>
             <div id=filter>
                 <p>Filtres</p>
-                <div class=containfilter><span id=logoeco class="fas fa-money-bill-wave"></span><span class=logotxt>Économique</span></div>
-                <div class=containfilter><span id=logofam class="fas fa-child"></span><span class=logotxt>Familial</span></div>
-                <div class=containfilter><span id=logorom class="fas fa-heart"></span><span class=logotxt>Romantique</span></div>
-                <div class=containfilter><span id=logoani class="fas fa-dog"></span><span class=logotxt>Animaux autorisés</span></div>
+                <div class=containfilter>
+                    <i class="fas fa-money-bill-wave backcolorgrey centerelement textcolorblue"></i><span class=logotxt>Économique</span>
+                    <i class="fas fa-child backcolorgrey centerelement textcolorblue"></i><span class=logotxt>Familial</span>
+                    <i class="fas fa-heart backcolorgrey centerelement textcolorblue"></i><span class=logotxt>Romantique</span>
+                    <i class="fas fa-dog backcolorgrey centerelement textcolorblue"></i><span class=logotxt>Animaux autorisés</span>
+                </div>
             </div>
             <div id=info>
                 <span id=logoinfo class="fas fa-info"></span><div id=infotxt>Plus de 500 logements sont disponibles dans cette ville</div>
