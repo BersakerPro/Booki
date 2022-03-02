@@ -1,4 +1,4 @@
-/*General*/
+/*GENERAL*/
 body{
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
@@ -30,11 +30,20 @@ body{
 .textcolorblue{
     color: #0065FC;
 }
+.textcolorgrey{
+    color: grey;
+}
 .textdeco{
     text-decoration: none;
 }
 .textsize15{
     font-size: 15px;
+}
+.textsize13{
+    font-size: 13px;
+}
+.textsize12{
+    font-size: 12px;
 }
 .bold{
     font-weight: bold;
@@ -48,12 +57,21 @@ body{
 .padding0{
     padding: 0;
 }
+.padding30{
+    padding: 30px;
+}
+.paddingtop20{
+    padding-top: 20px;
+}
+.margin0{
+    margin: 0;
+}
 .centerelement{
     vertical-align: middle;
     text-align: center;
 }
-/*Header*/
-img{
+/*HEADER*/
+header img{
     width: 100px;
     margin-left: 50px;
 }
@@ -69,7 +87,7 @@ nav ul li a:hover{
     border-top: #0065FC solid 3px;
     padding-top: 34px;
 }
-/*Contenu*/
+/*CONTENU*/
 
 h1{
     font-size: 20px;
@@ -102,7 +120,7 @@ span{
 /*Filtres*/
 .filter{
     display: flex;
-    margin-top: 30px;
+    margin-top: 20px;
     flex-wrap: wrap;
     line-height: 40px
 }
@@ -148,17 +166,56 @@ span{
     padding-top: 2px;
     font-size: 13px;
 }
-.card{
-    width: 200px;
-    height: 150px;
-    border: solid;
+/*Cartes hébergements*/
+.hebergement{
+    width: 800px;
+    height: 400px;
     border-radius: 20px;
+    margin-top: 20px;
 }
-.card img{
-    width: 200px;
-    height: 100px;
+.cardH{
+    width: 180px;
+    height: 150px;
+    border: solid white 1px;
+    border-radius: 20px;
+    padding: 0.2%;
+    box-shadow: black 0 0 15px;
+    margin-left: 30px;
+}
+.imgcardH{
+    width: 100%;
+    height: 60%;
     object-fit: cover;
+    object-position: top;
+    border-radius: 20px 20px 0 0;
 }
+.cardH p, .cardP p, .rating{
+    padding-left: 10px;
+    margin-top: 3px;
+}
+.cardH:hover{
+    border: #0065FC solid; 
+}
+.cardP{
+    display: flex;
+    width: 250px;
+    height: 100px;
+    border: solid white 1px;
+    border-radius: 20px;
+    padding: 0.2%;
+    box-shadow: black 0 0 15px;
+}
+.imgcardP{
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+    border-radius: 20px 0 0 20px;
+}
+
+/*MEDIA QUERIES*/
+
+/*Desktop & Tab*/
 @media screen and (min-width: 768px){
     .recherche{
         width: 370px; 
@@ -171,6 +228,7 @@ span{
         border-radius: 0 10px 10px 0;
     }
 }
+/*Phone*/
 @media screen and (max-width: 768px) {
     header{
         text-align: center;
