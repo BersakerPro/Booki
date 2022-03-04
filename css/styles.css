@@ -2,7 +2,7 @@
 body{
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-    width: 100%;
+    width: 992px;
     margin: 0;
     padding: 0;
     min-width: 280px;
@@ -35,6 +35,9 @@ body{
 }
 .textdeco{
     text-decoration: none;
+}
+.liststyle{
+    list-style: none;
 }
 .textsize15{
     font-size: 15px;
@@ -80,7 +83,6 @@ nav ul{
 }
 nav ul li{
     margin-right: 70px;
-    list-style: none;
 }
 nav ul li a:hover{
     color: #0065FC;
@@ -167,50 +169,122 @@ span{
     font-size: 13px;
 }
 /*Cartes hébergements*/
+.conteneur1{
+    display: flex;
+    justify-content: flex-start;
+}
 .hebergement{
-    width: 800px;
-    height: 400px;
+    width: 66%;
+    height: 500px;
     border-radius: 20px;
     margin-top: 20px;
+    max-width: 700px;
+    min-width: 625px;
+}
+.containcardH{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
 }
 .cardH{
     width: 180px;
     height: 150px;
-    border: solid white 1px;
     border-radius: 20px;
-    padding: 0.2%;
+    padding: 0.5%;
     box-shadow: black 0 0 15px;
-    margin-left: 30px;
+    margin: 10px;
 }
 .imgcardH{
     width: 100%;
     height: 60%;
     object-fit: cover;
-    object-position: top;
+    object-position: center;
     border-radius: 20px 20px 0 0;
 }
 .cardH p, .cardP p, .rating{
     padding-left: 10px;
     margin-top: 3px;
 }
-.cardH:hover{
+.cardH:hover, .cardP:hover{
     border: #0065FC solid; 
 }
 .cardP{
     display: flex;
     width: 250px;
     height: 100px;
-    border: solid white 1px;
     border-radius: 20px;
-    padding: 0.2%;
+    padding: 1%;
     box-shadow: black 0 0 15px;
+    margin: auto;
+    margin-top: 20px;
 }
 .imgcardP{
     width: 40%;
     height: 100%;
     object-fit: cover;
-    object-position: left;
+    object-position: center;
     border-radius: 20px 0 0 20px;
+}
+aside{
+    width: 30%;
+    height: 500px;
+    margin-top: 20px;
+    border-radius: 20px;
+    margin-left: 30px;
+    max-width: 380px;
+}
+aside span{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.conteneur2{
+    margin-top: 50px;
+}
+.activités{
+    display: flex;
+    justify-content: space-around;
+}
+.itemx1{
+    width: 220px;
+    height: 280px;
+    border-radius: 20px;
+    border: #F2F2F2 solid 1px;
+}
+.itemx1 img{
+    width: 100%;
+    height: 85%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    object-position: center;
+}
+.itemx1 p{
+    padding: 10px;
+}
+.itemx2{
+    flex-direction: column;
+}
+.itemx2img{
+    width: 220px;
+    height: 130px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: #F2F2F2 solid 1px;
+}
+.itemx2 img{
+    width: 100%;
+    height: 75%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    object-position: center;
+}
+.itemx2 p{
+    padding-top: 5px;
+    padding-left: 10px;
+}
+footer{
+    display: flex;
+    justify-content: flex-start;
 }
 
 /*MEDIA QUERIES*/
@@ -261,7 +335,7 @@ span{
         margin-left: 10px;
     }
     .recherche{
-        display: block;
+        display: flex;
         margin-left: auto;
         margin-right: auto;
         position: relative;   
