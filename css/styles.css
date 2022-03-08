@@ -186,7 +186,7 @@ span{
     width: 66%;
     height: 500px;
     border-radius: 20px;
-    max-width: 700px;
+    max-width: 720px;
     min-width: 625px;
 }
 .containcardH{
@@ -344,11 +344,14 @@ footer{
         width: 720px;
         height: 500px;
     }
+    .containcardH{
+        justify-content: center;
+    }
 } 
     
 
 /*Phone*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.9px) {
     header{
         text-align: center;
         flex-direction: column;
