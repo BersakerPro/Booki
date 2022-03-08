@@ -187,7 +187,6 @@ span{
     height: 500px;
     border-radius: 20px;
     max-width: 720px;
-    min-width: 625px;
 }
 .containcardH{
     display: flex;
@@ -325,6 +324,9 @@ footer{
 }
 /*Tab*/
 @media screen and (min-width: 768px) and (max-width: 991px){
+    .logotxt{
+        padding-left: 20px;
+    }
     .conteneur1{
         flex-direction: column-reverse;
     }
@@ -347,11 +349,26 @@ footer{
     .containcardH{
         justify-content: center;
     }
+    .conteneur2{
+        width: 720px;
+    }
+    .itemx1{
+        width: 150px;
+    }
+    .itemx2img{
+        width: 180px;
+    }
+    .noshebergement, .assistance{
+        margin-left: 100px;
+    }
 } 
     
 
 /*Phone*/
 @media screen and (max-width: 767.9px) {
+    body{
+        margin: 0;
+    }
     header{
         text-align: center;
         flex-direction: column;
@@ -408,5 +425,65 @@ footer{
         flex-wrap: wrap;
         margin-bottom: 10px;
     }
+    .conteneur1{
+        flex-direction: column-reverse;
+        margin: auto;
+    }
+    aside{
+        width: 95%;
+        margin: auto;
+        height: 550px;
+        margin-top: 30px;
+    }
+    .cardP{
+        width: 300px;
+        height: 120px;
+    }
+    .textcard{
+        padding: 15px;
+    }
+    .hebergement{
+        width: 95%;
+        height: auto;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 50px;
+        background-color: white;
+    }
+    .containcardH{
+        justify-content: center;
+    }
+    .cardH{
+        width: 300px;
+        height: 150px;
+    }
+    .conteneur2{
+        margin: auto;
+        margin-top: 50px;
+    }
+    .activités{
 
+        width: 95%;
+        flex-direction: column;
+        margin: auto;
+    }
+    .itemx1, .itemx2img{
+        width: 300px;
+        height: 160px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .itemx1 p{
+        padding: 0 15px;
+    }
+    footer{
+        width: 95%;
+        display: block;
+    }
+    .propos{
+        padding-top: 20px;
+    }
+    .noshebergement, .assistance{
+        margin: 30px 30px;
+    }
 }
