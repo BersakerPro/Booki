@@ -2,85 +2,85 @@
 body{
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-    width: 100%;
+    width: 100% ;
     min-width: 280px;
 }
-main{
-    margin-left: 15px;
-}
-.flexbetween{
+.flex-between{
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
-.backcolorblue{
+.back-color-blue{
     background-color: #0065FC;
 }
-.backcolorgrey{
+.back-color-grey{
     background-color: #F2F2F2;
 }
-.backcolorbluelight{
+.back-color-bluelight{
     background-color: #DEEBFF;
 }
-.textcolorblack{
+.text-color-black{
     color: black;
 }
-.textcolorwhite{
+.text-color-white{
     color: white;
 }
-.textcolorblue{
+.text-color-blue{
     color: #0065FC;
 }
-.textcolorgrey{
+.text-color-grey{
     color: grey;
 }
-.textdeco{
+.text-deco{
     text-decoration: none;
 }
-.liststyle{
+.list-style{
     list-style: none;
 }
-.textsize15{
+.text-size-20{
+    font-size: 20px;
+}
+.text-size-15{
     font-size: 15px;
 }
-.textsize13{
+.text-size-13{
     font-size: 13px;
 }
-.textsize12{
+.text-size-12{
     font-size: 12px;
 }
 .bold{
     font-weight: bold;
 }
-.height50{
+.height-50{
     height: 50px;
 }
-.marginleft30{
+.margin-left-30{
     margin-left: 30px;
 }
-.marginleft150{
+.margin-left-150{
     margin-left: 150px;
 }
-.padding0{
+.padding-0{
     padding: 0;
 }
-.padding30{
+.padding-30{
     padding: 30px;
 }
-.paddingtop20{
+.padding-top-20{
     padding-top: 20px;
 }
-.margin0{
+.margin-0{
     margin: 0;
 }
-.margintop20{
+.margin-top-20{
     margin-top: 20px;
 }
-.centerelement{
+.center-element{
     vertical-align: middle;
     text-align: center;
 }
-.lineheight25{
+.line-height-25{
     line-height: 25px;
 }
 /*HEADER*/
@@ -102,12 +102,10 @@ nav ul li a:hover{
 /*CONTENU*/
 
 h1{
-    font-size: 20px;
     margin-top: 40px;
     margin-bottom: 0;
 }
 h2{
-    font-size: 13px;
     margin-top: 5px;
 }
 /*Barre de recherche*/
@@ -115,14 +113,13 @@ h2{
     line-height: 50px;
 }
 span{
-    font-size: 20px;
     width: 50px;
 }
 .recherche{
     display: flex;
     border-radius: 10px;
 }
-.searchbar{
+.search-bar{
     width: 230px;
     border: #F2F2F2 solid 1px;
     border-left: hidden;
@@ -137,27 +134,24 @@ span{
 .filter p{
     margin: 0;
 }
-.containfilter{
+.contain-filter{
     margin-left: 25px;
 }
-.containfilter i{
+.contain-filter i{
     line-height: 40px;
     border-radius: 40px;
     height: 40px;
     width: 40px;
 }
-.logotxt{
-    padding-left: 30px;
-    padding-right: 9px;
-    padding-top: 9px;
-    padding-bottom: 11px;
+.logo-txt{
+    padding: 9px 9px 11px 30px;
     border: solid #F2F2F2 2px;
     border-radius: 0 50px 50px 0; 
     border-left: #DEEBFF;
     overflow: hidden;
     margin-left: -17px;
 }
-.containfilter:hover{
+.contain-filter:hover{
     box-shadow: #0065FC 0 0 10px;
     border-radius: 20px;
 }
@@ -166,19 +160,19 @@ span{
     flex-wrap: nowrap;
     font-size: 10px;
 }
-.logoinfo{
+.logo-info{
     border: solid 2px #F2F2F2;
     border-radius: 50px;
     width: 15px;
     height: 15px;
     line-height: 15px;
 }
-.infotxt{
+.info-txt{
     padding-left: 8px;
     padding-top: 2px;
 }
 /*Cartes hébergements*/
-.conteneur1{
+.conteneur-1{
     display: flex;
     justify-content: flex-start;
 }
@@ -186,7 +180,6 @@ span{
     width: 66%;
     height: 500px;
     border-radius: 20px;
-    max-width: 720px;
 }
 .containcardH{
     display: flex;
@@ -208,7 +201,7 @@ span{
     object-position: center;
     border-radius: 20px 20px 0 0;
 }
-.cardH p, .cardP p, .rating{
+.cardH p, .card-pop p, .rating{
     padding-left: 10px;
     margin-top: 3px;
 }
@@ -216,13 +209,13 @@ span{
     box-shadow: #0065FC 0 0 15px; 
 }
 /*Cartes populaires*/
-.cardP{
+.card-pop{
     display: flex;
     width: 250px;
     height: 100px;
     border-radius: 20px;
     padding: 1%;
-    margin: auto;
+    margin: 1%;
     margin-top: 20px;
     box-shadow: grey 0 0 15px;
 }
@@ -311,6 +304,9 @@ footer{
 
 /*Desktop & Tab*/
 @media screen and (min-width: 768px){
+    body{
+        width: 992px;
+    }
     .recherche{
         width: 370px; 
     }
@@ -324,11 +320,16 @@ footer{
 }
 /*Tab*/
 @media screen and (min-width: 768px) and (max-width: 991px){
+    body{
+        width: 768px;
+    }
     .logotxt{
         padding-left: 20px;
     }
-    .conteneur1{
+    .conteneur-1{
         flex-direction: column-reverse;
+        width: 720px;
+        margin: auto;
     }
     aside:not(aside span){
         width: 720px;
@@ -338,8 +339,7 @@ footer{
         justify-content: center;
         margin: 20px 0;
     }
-    .cardP{
-        margin: 5px;
+    .card-pop{
         width: 210px;
     }
     .hebergement{
@@ -351,6 +351,7 @@ footer{
     }
     .conteneur2{
         width: 720px;
+        margin: auto;
     }
     .itemx1{
         width: 150px;
@@ -421,11 +422,11 @@ footer{
         justify-content: flex-start;
         margin-left: 5px;
     }
-    .containfilter{
+    .contain-filter{
         flex-wrap: wrap;
         margin-bottom: 10px;
     }
-    .conteneur1{
+    .conteneur-1{
         flex-direction: column-reverse;
         margin: auto;
     }
@@ -435,9 +436,11 @@ footer{
         height: 550px;
         margin-top: 30px;
     }
-    .cardP{
+    .card-pop{
         width: 300px;
         height: 120px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .textcard{
         padding: 15px;
