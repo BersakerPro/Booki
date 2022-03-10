@@ -5,6 +5,10 @@ body{
     width: 100% ;
     min-width: 280px;
 }
+main{
+    max-width: 1000px;
+    margin: auto;
+}
 .flex-between{
     display: flex;
     justify-content: space-between;
@@ -109,6 +113,16 @@ h2{
     margin-top: 5px;
 }
 /*Barre de recherche*/
+.recherche{
+    width: 370px; 
+}
+#loupe{
+    display: none;
+}
+.searchbutton{
+    width: 140px;
+    border-radius: 0 10px 10px 0;
+}
 #loc{
     line-height: 50px;
 }
@@ -156,8 +170,6 @@ span{
     border-radius: 20px;
 }
 .info{
-    display: flex;
-    flex-wrap: nowrap;
     font-size: 10px;
 }
 .logo-info{
@@ -181,7 +193,7 @@ span{
     height: 500px;
     border-radius: 20px;
 }
-.containcardH{
+.contain-card-heb{
     display: flex;
     flex-wrap: wrap;
     margin: 5px;
@@ -233,7 +245,7 @@ aside{
     border-radius: 20px;
     margin-left: 30px;
 }
-aside span{
+.pop-text{
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -302,27 +314,8 @@ footer{
 
 /*MEDIA QUERIES*/
 
-/*Desktop & Tab*/
-@media screen and (min-width: 768px){
-    body{
-        width: 992px;
-    }
-    .recherche{
-        width: 370px; 
-    }
-    #loupe{
-        display: none;
-    }
-    .searchbutton{
-        width: 140px;
-        border-radius: 0 10px 10px 0;
-    }
-}
 /*Tab*/
-@media screen and (min-width: 768px) and (max-width: 991px){
-    body{
-        width: 768px;
-    }
+@media screen and (min-width: 768px) and (max-width: 991.9px){
     .logotxt{
         padding-left: 20px;
     }
@@ -346,7 +339,7 @@ footer{
         width: 720px;
         height: 500px;
     }
-    .containcardH{
+    .contain-card-heb{
         justify-content: center;
     }
     .conteneur2{
@@ -407,11 +400,13 @@ footer{
         position: relative;   
         width: 280px; 
     }
+    #loupe{
+        display: initial;
+    }
     .searchtext{
         display: none;
     }
     .searchbutton{
-        width: 50px;
         border-radius: 10px;
         line-height: 50px;
     }
