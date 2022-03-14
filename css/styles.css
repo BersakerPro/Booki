@@ -4,8 +4,6 @@ body{
     font-family: 'Raleway', sans-serif;
     width: 100% ;
     min-width: 380px;
-}
-main{
     max-width: 1000px;
     margin: auto;
 }
@@ -45,16 +43,15 @@ h4{
     font-size: 12px;
 }
 
-/*HEADER*/
+/*HEADER*/ 
 header img{
-    width: 100px;
-    margin-left: 50px;
+    width: 120px;
 }
 nav ul{
     display: flex;
 }
 nav ul li{
-    margin-right: 70px;
+    margin-left: 70px;
 }
 nav ul li a:hover{
     color: #0065FC;
@@ -166,7 +163,7 @@ span{
 
 /*Cartes hébergement*/
 .hebergement{
-    width: 66%;
+    width: 70%;
     height: 500px;
     border-radius: 20px;
     margin-top: 20px;
@@ -175,7 +172,7 @@ span{
 .contain-card-heb{
     display: flex;
     flex-wrap: wrap;
-    margin: 3%;
+    margin: 2%;
 }
 .card-heb{
     width: 180px;
@@ -223,7 +220,7 @@ aside{
     height: 500px;
     margin-top: 20px;
     border-radius: 20px;
-    margin-left: 30px;
+    margin-left: 25px;
     background-color: #F2F2F2;
 }
 .pop-text{
@@ -311,13 +308,15 @@ aside{
 /*FOOTER*/
 
 footer{
-    display: flex;
-    justify-content: flex-start;
     background-color: #F2F2F2;
     margin-top: 20px;
+    display: flex;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .footer-left{
-    margin-left: 30px;
+    margin-left: 15px;
 }
 .footer-right{
     margin-left: 150px;
@@ -334,7 +333,25 @@ footer li{
 
 /*Tab*/
 @media screen and (min-width: 768px) and (max-width: 991.9px){
+    /*GENERAL*/
+    body{
+        width: 768px;
+    }
+    /*HEADER*/
+    header{
+        width: 720px;
+        margin: auto;
+    }
+    /*CONTENU*/
+    main{
+        width: 720px;
+        margin: auto;
+    }
     /*Filtres*/
+    .filter{
+        width: 720px;
+        margin-top: 20px;
+    }
     .logotxt{
         padding-left: 20px;
     }
@@ -376,6 +393,9 @@ footer li{
         width: 180px;
     }
     /*FOOTER*/
+    footer{
+        width: 768px;
+    }
     .footer-right{
         margin-left: 100px;
     }
@@ -416,7 +436,7 @@ footer li{
     main{
         margin: 0;
     }
-    h1, h2, form h3{
+    h1, h2, form p{
         margin-left: 10px;
     }
     /*Barre de recherche*/
@@ -513,6 +533,7 @@ footer li{
     }
     .footer-left{
         padding-top: 20px;
+        margin-left: 30px;
     }
     .footer-right{
         margin: 30px 30px;
