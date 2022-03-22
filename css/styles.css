@@ -4,7 +4,7 @@ body{
     font-family: 'Raleway', sans-serif;
     width: 100% ;
     min-width: 380px;
-    max-width: 1000px;
+    max-width: 1400px;
     margin: auto;
 }
 .flex-between{
@@ -159,12 +159,15 @@ span{
 /*CONTENEUR 1*/
 .conteneur-1{
     display: flex;
+    justify-content: center;
 }
 
 /*Cartes hébergement*/
 .hebergement{
-    width: 70%;
-    height: 500px;
+    width: 60%;
+    min-width: 650px;
+    max-width: 740px;
+    height: 550px;
     border-radius: 20px;
     margin-top: 20px;
     background-color: #F2F2F2;
@@ -172,7 +175,8 @@ span{
 .contain-card-heb{
     display: flex;
     flex-wrap: wrap;
-    margin: 2%;
+    justify-content: space-around;
+    margin-top: 20px;
 }
 .card-heb{
     width: 180px;
@@ -180,7 +184,7 @@ span{
     border-radius: 20px;
     padding: 0.5%;
     box-shadow: grey 0 0 15px;
-    margin: 10px;
+    margin-bottom:40px;
 }
 .img-card-heb{
     width: 100%;
@@ -217,10 +221,11 @@ span{
 /*Cartes populaires*/
 aside{
     width: 30%;
-    height: 500px;
+    height: 550px;
+    max-width: 330px;
     margin-top: 20px;
     border-radius: 20px;
-    margin-left: 25px;
+    margin-left: 50px;
     background-color: #F2F2F2;
 }
 .pop-text{
@@ -233,8 +238,8 @@ aside{
 }
 .card-pop{
     display: flex;
-    width: 250px;
-    height: 100px;
+    width: 270px;
+    height: 110px;
     border-radius: 20px;
     padding: 1%;
     margin: auto;
@@ -249,7 +254,10 @@ aside{
     border-radius: 20px 0 0 20px;
 }
 .rating-pop{
-    padding-top: 20px;
+    padding-top: 30px;
+}
+.card-pop-text{
+    margin-top: 10px;
 }
 /*CONTENEUR 2*/
 .conteneur-2{
@@ -258,12 +266,18 @@ aside{
 
 /*Cartes Activités*/
 .activity{
+    width: 100%;
+    margin: auto;
+}
+.contain-activity{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    margin: auto;
+    margin: 20px;
 }
 .item-x1{
     width: 220px;
-    height: 280px;
+    height: 340px;
     border-radius: 20px;
     border: #F2F2F2 solid 1px;
 }
@@ -288,9 +302,10 @@ aside{
 }
 .item-x2{
     width: 220px;
-    height: 130px;
+    height: 160px;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin: 0 20px 18px 20px;
+
     border: #F2F2F2 solid 1px;
 }
 .item-x2:hover{
@@ -311,7 +326,7 @@ footer{
     background-color: #F2F2F2;
     margin-top: 20px;
     display: flex;
-    width: 1000px;
+    width: 1400px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -364,7 +379,8 @@ footer li{
     /*Cartes populaires*/
     aside:not(aside span){
         width: 720px;
-        height: 220px;
+        max-width: initial;
+        height: 230px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -376,18 +392,24 @@ footer li{
     /*Cartes hébergements*/
     .hebergement{
         width: 720px;
-        height: 500px;
+        height: 550px;
     }
     .contain-card-heb{
-        justify-content: center;
+        justify-content: space-around;
     }
     /*CONTENEUR 2*/
+    .activity{
+        width: 100%;
+    }
+    .contain-activity{
+        margin: 0;
+    }
     .conteneur-2{
         width: 720px;
         margin: auto;
     }
     .item-x1{
-        width: 150px;
+        width: 180px;
     }
     .item-x2{
         width: 180px;
@@ -406,6 +428,7 @@ footer li{
 @media screen and (max-width: 767.9px) {
     body{
         margin: 0;
+        width: 100%;
     }
     /*HEADER*/
     header{
@@ -474,6 +497,9 @@ footer li{
         flex-direction: column-reverse;
         margin: auto;
     }
+    .hebergement{
+        min-width: initial;
+    }
     /*Cartes populaires*/
     aside{
         width: 95%;
@@ -493,6 +519,7 @@ footer li{
     /*Cartes hébergements*/
     .hebergement{
         width: 95%;
+        max-width: 600px;
         height: auto;
         flex-direction: column;
         margin: auto;
@@ -512,7 +539,7 @@ footer li{
         margin-top: 50px;
     }
     /*Cartes activités*/
-    .activity{
+    .contain-activity{
         width: 95%;
         flex-direction: column;
         margin: auto;

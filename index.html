@@ -16,8 +16,8 @@
         <img src="images/logo/Booki.png" alt="logo de booki">
         <nav>
             <ul>
-                <li class="list-style"><a class="href-style" href="#">Hébergements</a></li>
-                <li class="list-style"><a class="href-style" href="#">Activités</a></li>
+                <li class="list-style"><a class="href-style" href="#cont1">Hébergements</a></li>
+                <li class="list-style"><a class="href-style" href="#cont2">Activités</a></li>
             </ul>
         </nav>
     </header>
@@ -49,7 +49,7 @@
             <span class="fas fa-info logo-info center-element"></span>
             <p class="info-txt">Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
-        <section class="conteneur-1">
+        <section id="cont1" class="conteneur-1">
             <article class="hebergement">
                 <h2>Hébergements à Marseille</h2>
                 <div class="contain-card-heb">
@@ -143,7 +143,7 @@
                     <img class="img-card-pop"
                         src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                         alt="Hotel Le soleil du matin">
-                    <div>
+                    <div class="card-pop-text">
                         <h3 class="card-text">Hôtel Le soleil du matin</h3>
                         <p class="price card-text">Nuit à partir de 128€</p>
                         <div class="rating-pop">
@@ -182,75 +182,78 @@
                 </a>
             </aside>
         </section>
-        <section class="conteneur-2">
-            <h2>Activités à Marseille</h2>
+        <section id="cont2" class="conteneur-2">
             <article class="activity">
-                <a class="item-x1 href-style" href="#">
-                    <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port">
-                    <h3 class="activity-text">Vieux Port</h3>
-                </a>
-                <div class="contain-item-x2">
-                    <a class="href-style" href="#">
-                        <div class="item-x2">
-                            <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                                alt="Fort de Pomègues">
-                            <h3 class="activity-text">Fort de Pomègues</h3>
-                        </div>
+                <h2>Activités à Marseille</h2>
+                <div class="contain-activity">
+                    <a class="item-x1 href-style" href="#">
+                        <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port">
+                        <h3 class="activity-text">Vieux Port</h3>
                     </a>
-                    <a class="href-style" href="#">
-                        <div class="item-x2">
-                            <img src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                                alt="iles de Frioul">
-                            <h3 class="activity-text">Îles de Frioul</h3>
-                        </div>
+                    <div class="contain-item-x2">
+                        <a class="href-style" href="#">
+                            <div class="item-x2">
+                                <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                                    alt="Fort de Pomègues">
+                                <h3 class="activity-text">Fort de Pomègues</h3>
+                            </div>
+                        </a>
+                        <a class="href-style" href="#">
+                            <div class="item-x2">
+                                <img src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                                    alt="iles de Frioul">
+                                <h3 class="activity-text">Îles de Frioul</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <a class="item-x1 href-style" href="#">
+                        <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                            alt="Calanques">
+                        <h3 class="activity-text">Parc National des Calanques</h3>
                     </a>
-                </div>
-                <a class="item-x1 href-style" href="#">
-                    <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques">
-                    <h3 class="activity-text">Parc National des Calanques</h3>
-                </a>
-                <div class="contain-item-x2">
-                    <a class="href-style" href="#">
-                        <div class="item-x2">
-                            <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                                alt="Notre-dame-de-la-Garde">
-                            <h3 class="activity-text">Notre-Dame-de-la-Garde</h3>
-                        </div>
-                    </a>
-                    <a class="href-style" href="#">
-                        <div class="item-x2">
-                            <img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                                alt="Parc Longchamp">
-                            <h3 class="activity-text">Parc Longchamp</h3>
-                        </div>
-                    </a>
+                    <div class="contain-item-x2">
+                        <a class="href-style" href="#">
+                            <div class="item-x2">
+                                <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                                    alt="Notre-dame-de-la-Garde">
+                                <h3 class="activity-text">Notre-Dame-de-la-Garde</h3>
+                            </div>
+                        </a>
+                        <a class="href-style" href="#">
+                            <div class="item-x2">
+                                <img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                                    alt="Parc Longchamp">
+                                <h3 class="activity-text">Parc Longchamp</h3>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </article>
         </section>
     </main>
     <footer>
-            <div class="footer-left">
-                <h4>A propos</h4>
-                <ul class="list-style">
-                    <li><a class="href-style" href="#">Fonctionnement du site</a></li>
-                    <li><a class="href-style" href="#">Conditions générales de vente</a></li>
-                    <li><a class="href-style" href="#">Données et confidentialité</a></li>
-                </ul>
-            </div>
-            <div class="footer-right">
-                <h4>Nos hébergements</h4>
-                <ul class="list-style">
-                    <li><a class="href-style" href="#">Charte qualité</a></li>
-                    <li><a class="href-style" href="#">Soumettre votre hôtel</a></li>
-                </ul>
-            </div>
-            <div class="footer-right">
-                <h4>Assistance</h4>
-                <ul class="list-style">
-                    <li><a class="href-style" href="#">Centre d'aide</a></li>
-                    <li><a class="href-style" href="#">Nous contacter</a></li>
-                </ul>
-            </div>
+        <div class="footer-left">
+            <h4>A propos</h4>
+            <ul class="list-style">
+                <li><a class="href-style" href="#">Fonctionnement du site</a></li>
+                <li><a class="href-style" href="#">Conditions générales de vente</a></li>
+                <li><a class="href-style" href="#">Données et confidentialité</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <h4>Nos hébergements</h4>
+            <ul class="list-style">
+                <li><a class="href-style" href="#">Charte qualité</a></li>
+                <li><a class="href-style" href="#">Soumettre votre hôtel</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <h4>Assistance</h4>
+            <ul class="list-style">
+                <li><a class="href-style" href="#">Centre d'aide</a></li>
+                <li><a class="href-style" href="#">Nous contacter</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 
